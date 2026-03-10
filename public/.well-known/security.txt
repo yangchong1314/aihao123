@@ -1,0 +1,7 @@
+# AI好工具 - Security Information
+# https://aihao123-two.vercel.app/.well-known/security.txt
+
+Contact: security@aihao123.com
+Expires: 2027-03-10T00:00:00.000Z
+Preferred-Languages: zh, en
+Canonical: https://aihao123-two.vercel.app/.well-known/security.txt
