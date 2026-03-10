@@ -78,6 +78,12 @@ export default function Home() {
             >
               快讯
             </button>
+            <a
+              href="/submit"
+              className="hover:text-gray-900 transition-colors"
+            >
+              推荐工具
+            </a>
             <button
               onClick={handleShare}
               className="hover:text-gray-900 transition-colors flex items-center gap-1"
