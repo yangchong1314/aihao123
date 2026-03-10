@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { categories } from "@/data/submit";
 
+const FEISHU_WEBHOOK = "https://www.feishu.cn/flow/api/trigger-webhook/xxx"; // 需要配置
+
 export default function SubmitPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -14,19 +16,27 @@ export default function SubmitPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError("");
 
-    // Simulate submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    // In a real implementation, this would send data to a backend
-    console.log("Submitted:", formData);
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      // For now, simulate submission
+      // In production, this would send to Feishu via webhook or API
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      
+      // Log the submission (for debugging)
+      console.log("Tool submitted:", formData);
+      
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+    } catch (err) {
+      setIsSubmitting(false);
+      setError("提交失败，请稍后重试");
+    }
   };
 
   const handleChange = (
@@ -40,7 +50,6 @@ export default function SubmitPage() {
   if (isSubmitted) {
     return (
       <main className="min-h-screen bg-gray-50">
-        {/* Header */}
         <header className="bg-white border-b border-gray-200">
           <div className="max-w-6xl mx-auto px-4 py-4">
             <a
@@ -59,8 +68,11 @@ export default function SubmitPage() {
             <h1 className="text-2xl font-bold text-gray-900 mb-4">
               提交成功！
             </h1>
-            <p className="text-gray-600 mb-6">
-              感谢你的推荐！我们会尽快审核并添加到网站中。
+            <p className="text-gray-600 mb-2">
+              感谢你的推荐！我们会尽快审核。
+            </p>
+            <p className="text-sm text-gray-500 mb-6">
+              审核通过后，工具将显示在网站中
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -94,7 +106,6 @@ export default function SubmitPage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <a
@@ -122,8 +133,13 @@ export default function SubmitPage() {
             发现好用的 AI 工具？推荐给我们，帮助更多人发现优质工具。
           </p>
 
+          {error && (
+            <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-600">
+              {error}
+            </div>
+          )}
+
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Tool Name */}
             <div>
               <label
                 htmlFor="name"
@@ -143,7 +159,6 @@ export default function SubmitPage() {
               />
             </div>
 
-            {/* Tool URL */}
             <div>
               <label
                 htmlFor="url"
@@ -163,7 +178,6 @@ export default function SubmitPage() {
               />
             </div>
 
-            {/* Category */}
             <div>
               <label
                 htmlFor="category"
@@ -181,14 +195,13 @@ export default function SubmitPage() {
               >
                 <option value="">请选择分类</option>
                 {categories.map((cat) => (
-                  <option key={cat.id} value={cat.id}>
+                  <option key={cat.id} value={cat.name}>
                     {cat.icon} {cat.name}
                   </option>
                 ))}
               </select>
             </div>
 
-            {/* Description */}
             <div>
               <label
                 htmlFor="description"
@@ -211,7 +224,6 @@ export default function SubmitPage() {
               </p>
             </div>
 
-            {/* Tags */}
             <div>
               <label
                 htmlFor="tags"
@@ -230,7 +242,6 @@ export default function SubmitPage() {
               />
             </div>
 
-            {/* Submitter */}
             <div>
               <label
                 htmlFor="submitter"
@@ -249,7 +260,6 @@ export default function SubmitPage() {
               />
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               disabled={isSubmitting}
