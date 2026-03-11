@@ -3,6 +3,8 @@
 import { useState, useMemo } from "react";
 import { tools, categories, Tool } from "@/data/tools";
 import { news, newsCategories, NewsItem } from "@/data/news";
+import MobileNav from "@/components/MobileNav";
+import SocialShare from "@/components/SocialShare";
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -103,6 +105,7 @@ export default function Home() {
               <span>🔗</span> 分享
             </button>
           </nav>
+          <MobileNav />
         </div>
       </header>
 
