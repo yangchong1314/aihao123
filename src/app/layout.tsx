@@ -24,6 +24,12 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
+  // 缓存控制 - 防止CDN缓存问题
+  other: {
+    "cache-control": "no-cache, no-store, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+  },
   keywords: [
     "AI工具",
     "人工智能",
