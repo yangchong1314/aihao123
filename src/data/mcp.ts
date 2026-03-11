@@ -1,0 +1,167 @@
+export interface McpServer {
+  id: string;
+  name: string;
+  description: string;
+  category: string;
+  tags: string[];
+  url: string;
+  installCommand?: string;
+  isHot?: boolean;
+  isNew?: boolean;
+}
+
+export const mcpCategories = [
+  { id: 'all', name: '全部', icon: '🔥' },
+  { id: 'filesystem', name: '文件系统', icon: '📁' },
+  { id: 'database', name: '数据库', icon: '🗄️' },
+  { id: 'browser', name: '浏览器', icon: '🌐' },
+  { id: 'api', name: 'API服务', icon: '🔌' },
+  { id: 'search', name: '搜索', icon: '🔍' },
+  { id: 'other', name: '其他', icon: '📦' },
+];
+
+export const mcpServers: McpServer[] = [
+  {
+    id: 'filesystem',
+    name: 'Filesystem MCP',
+    description: '文件系统访问，允许 AI 读取、写入、管理本地文件',
+    category: 'filesystem',
+    tags: ['文件', '本地', '基础'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem',
+    installCommand: 'npx -y @modelcontextprotocol/server-filesystem /path/to/directory',
+    isHot: true,
+  },
+  {
+    id: 'sqlite',
+    name: 'SQLite MCP',
+    description: 'SQLite 数据库操作，支持查询、插入、更新',
+    category: 'database',
+    tags: ['数据库', 'SQLite', 'SQL'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite',
+    installCommand: 'npx -y @modelcontextprotocol/server-sqlite /path/to/database.db',
+    isHot: true,
+  },
+  {
+    id: 'puppeteer',
+    name: 'Puppeteer MCP',
+    description: '浏览器自动化，网页抓取、截图、PDF生成',
+    category: 'browser',
+    tags: ['浏览器', '自动化', '抓取'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer',
+    installCommand: 'npx -y @modelcontextprotocol/server-puppeteer',
+    isHot: true,
+  },
+  {
+    id: 'fetch',
+    name: 'Fetch MCP',
+    description: 'HTTP 请求，调用任意 API 获取数据',
+    category: 'api',
+    tags: ['HTTP', 'API', '网络'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/fetch',
+    installCommand: 'npx -y @modelcontextprotocol/server-fetch',
+    isHot: true,
+  },
+  {
+    id: 'brave-search',
+    name: 'Brave Search MCP',
+    description: 'Brave 搜索引擎，AI 搜索网页内容',
+    category: 'search',
+    tags: ['搜索', 'Brave', '网页'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search',
+    installCommand: 'npx -y @modelcontextprotocol/server-brave-search',
+    isHot: true,
+  },
+  {
+    id: 'github',
+    name: 'GitHub MCP',
+    description: 'GitHub API 操作，代码仓库管理、Issue、PR',
+    category: 'api',
+    tags: ['GitHub', '代码', '协作'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/github',
+    installCommand: 'npx -y @modelcontextprotocol/server-github',
+    isHot: true,
+  },
+  {
+    id: 'postgres',
+    name: 'PostgreSQL MCP',
+    description: 'PostgreSQL 数据库操作，支持复杂查询',
+    category: 'database',
+    tags: ['数据库', 'PostgreSQL', 'SQL'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/postgres',
+    installCommand: 'npx -y @modelcontextprotocol/server-postgres',
+  },
+  {
+    id: 'redis',
+    name: 'Redis MCP',
+    description: 'Redis 缓存数据库操作，键值对存储',
+    category: 'database',
+    tags: ['数据库', 'Redis', '缓存'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/redis',
+    installCommand: 'npx -y @modelcontextprotocol/server-redis',
+  },
+  {
+    id: 'google-maps',
+    name: 'Google Maps MCP',
+    description: 'Google 地图服务，地理编码、路线规划',
+    category: 'api',
+    tags: ['地图', '地理', 'API'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps',
+    installCommand: 'npx -y @modelcontextprotocol/server-google-maps',
+  },
+  {
+    id: 'slack',
+    name: 'Slack MCP',
+    description: 'Slack 消息发送，团队协作通知',
+    category: 'api',
+    tags: ['Slack', '消息', '协作'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/slack',
+    installCommand: 'npx -y @modelcontextprotocol/server-slack',
+  },
+  {
+    id: 'memory',
+    name: 'Memory MCP',
+    description: '知识图谱记忆，持久化存储对话上下文',
+    category: 'other',
+    tags: ['记忆', '知识图谱', '持久化'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/memory',
+    installCommand: 'npx -y @modelcontextprotocol/server-memory',
+    isHot: true,
+  },
+  {
+    id: 'sequential-thinking',
+    name: 'Sequential Thinking MCP',
+    description: '动态思维链，复杂问题逐步推理',
+    category: 'other',
+    tags: ['思维链', '推理', '逻辑'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking',
+    installCommand: 'npx -y @modelcontextprotocol/server-sequential-thinking',
+    isHot: true,
+  },
+  {
+    id: 'time',
+    name: 'Time MCP',
+    description: '时间转换，时区处理、时间计算',
+    category: 'other',
+    tags: ['时间', '时区', '工具'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/time',
+    installCommand: 'npx -y @modelcontextprotocol/server-time',
+  },
+  {
+    id: 'everything',
+    name: 'Everything MCP',
+    description: '参考示例，展示 MCP 协议各种功能',
+    category: 'other',
+    tags: ['示例', '参考', '学习'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/everything',
+    installCommand: 'npx -y @modelcontextprotocol/server-everything',
+  },
+  {
+    id: 'gdrive',
+    name: 'Google Drive MCP',
+    description: 'Google 云盘文件管理，读写云端文件',
+    category: 'filesystem',
+    tags: ['云盘', '文件', 'Google'],
+    url: 'https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive',
+    installCommand: 'npx -y @modelcontextprotocol/server-gdrive',
+  },
+];
