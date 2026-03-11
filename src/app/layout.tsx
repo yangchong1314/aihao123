@@ -93,10 +93,10 @@ export const metadata: Metadata = {
   
   // 其他 Meta 标签
   verification: {
-    google: "your-google-verification-code",
+    google: "google-site-verification=aihao123-verification",
     other: {
-      "baidu-site-verification": "your-baidu-verification-code",
-      "msvalidate.01": "your-bing-verification-code",
+      "baidu-site-verification": "baidu-verification-aihao123",
+      "msvalidate.01": "bing-verification-aihao123",
     },
   },
   
