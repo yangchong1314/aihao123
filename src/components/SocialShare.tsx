@@ -7,6 +7,24 @@ interface SocialShareProps {
 }
 
 export default function SocialShare({ title, description, url }: SocialShareProps) {
+  // Web Share API (移动端原生分享)
+  const handleNativeShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: title,
+          text: description,
+          url: url,
+        });
+      } catch (err) {
+        console.log("分享取消");
+      }
+    } else {
+      // 不支持原生分享，复制链接
+      copyLink();
+    }
+  };
+
   const shareToWeibo = () => {
     const shareUrl = `https://service.weibo.com/share/share.php?title=${encodeURIComponent(
       title + " - " + description
@@ -28,7 +46,17 @@ export default function SocialShare({ title, description, url }: SocialShareProp
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-sm text-gray-500">分享到：</span>
+      <span className="text-sm text-gray-500">分享：</span>
+      {/* 原生分享按钮（移动端优先） */}
+      <button
+        onClick={handleNativeShare}
+        className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+        title="分享"
+      >
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+        </svg>
+      </button>
       <button
         onClick={shareToWeibo}
         className="p-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors"

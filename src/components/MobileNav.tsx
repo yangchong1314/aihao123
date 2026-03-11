@@ -45,22 +45,24 @@ export default function MobileNav() {
       </button>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg">
-          <nav className="flex flex-col px-4 py-2">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="py-3 text-gray-600 hover:text-blue-600 border-b border-gray-100 last:border-0"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-      )}
+      <div
+        className={`absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg transition-all duration-300 ease-in-out ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <nav className="flex flex-col px-4 py-2">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="py-3 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg px-2 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
     </div>
   );
 }
