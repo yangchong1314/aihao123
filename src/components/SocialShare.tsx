@@ -1,5 +1,7 @@
 "use client";
 
+import WechatShare from "./WechatShare";
+
 interface SocialShareProps {
   title: string;
   description: string;
@@ -47,6 +49,8 @@ export default function SocialShare({ title, description, url }: SocialShareProp
   return (
     <div className="flex items-center gap-2">
       <span className="text-sm text-gray-500">分享：</span>
+      {/* 微信分享 */}
+      <WechatShare title={title} description={description} url={url} />
       {/* 原生分享按钮（移动端优先） */}
       <button
         onClick={handleNativeShare}
