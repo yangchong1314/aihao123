@@ -38,16 +38,16 @@ export default function SkillsPage() {
             <span className="text-xl font-bold">AI好工具</span>
           </a>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-gray-600">
-            <a href="/" className="hover:text-gray-900 transition-colors">
+            <a href="/aihao123/" className="hover:text-gray-900 transition-colors">
               首页
             </a>
-            <a href="/skills" className="text-blue-600 font-medium">
+            <a href="/aihao123/skills/" className="text-purple-600 font-medium">
               Skills
             </a>
-            <a href="/mcp" className="hover:text-gray-900 transition-colors">
+            <a href="/aihao123/mcp/" className="hover:text-gray-900 transition-colors">
               MCP
             </a>
-            <a href="/submit" className="hover:text-gray-900 transition-colors">
+            <a href="/aihao123/submit/" className="hover:text-gray-900 transition-colors">
               推荐
             </a>
           </nav>
