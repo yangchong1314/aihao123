@@ -93,7 +93,7 @@ export default function Home() {
               MCP
             </a>
             <a
-              href="/submit"
+              href="/aihao123/submit/"
               className="hover:text-gray-900 transition-colors"
             >
               推荐
