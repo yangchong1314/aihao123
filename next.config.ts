@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/aihao123',
   trailingSlash: true,
 };
 

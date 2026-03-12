@@ -37,16 +37,16 @@ export default function McpPage() {
             <span className="text-xl font-bold">AI好工具</span>
           </a>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-gray-600">
-            <a href="/aihao123/" className="hover:text-gray-900 transition-colors">
+            <a href="/" className="hover:text-gray-900 transition-colors">
               首页
             </a>
-            <a href="/aihao123/skills/" className="hover:text-gray-900 transition-colors">
+            <a href="/skills/" className="hover:text-gray-900 transition-colors">
               Skills
             </a>
-            <a href="/aihao123/mcp/" className="text-green-600 font-medium">
+            <a href="/mcp/" className="text-green-600 font-medium">
               MCP
             </a>
-            <a href="/aihao123/submit/" className="hover:text-gray-900 transition-colors">
+            <a href="/submit/" className="hover:text-gray-900 transition-colors">
               推荐
             </a>
           </nav>

@@ -81,19 +81,19 @@ export default function Home() {
               快讯
             </button>
             <a
-              href="/aihao123/skills/"
+              href="/skills/"
               className="hover:text-gray-900 transition-colors"
             >
               Skills
             </a>
             <a
-              href="/aihao123/mcp/"
+              href="/mcp/"
               className="hover:text-gray-900 transition-colors"
             >
               MCP
             </a>
             <a
-              href="/aihao123/submit/"
+              href="/submit/"
               className="hover:text-gray-900 transition-colors"
             >
               推荐

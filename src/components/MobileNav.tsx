@@ -6,10 +6,10 @@ export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "/aihao123/", label: "首页" },
-    { href: "/aihao123/skills/", label: "Skills" },
-    { href: "/aihao123/mcp/", label: "MCP" },
-    { href: "/aihao123/submit/", label: "推荐" },
+    { href: "/", label: "首页" },
+    { href: "/skills/", label: "Skills" },
+    { href: "/mcp/", label: "MCP" },
+    { href: "/submit/", label: "推荐" },
   ];
 
   return (
