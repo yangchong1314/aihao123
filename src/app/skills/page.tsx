@@ -1,16 +1,16 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { mcpSkills, mcpSkillCategories, McpSkill } from "@/data/mcp-skills";
+import { agentSkills, agentSkillCategories, AgentSkill } from "@/data/agent-skills";
 
 export default function SkillsPage() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedSkill, setSelectedSkill] = useState<McpSkill | null>(null);
+  const [selectedSkill, setSelectedSkill] = useState<AgentSkill | null>(null);
   const [copied, setCopied] = useState(false);
 
   const filteredSkills = useMemo(() => {
-    return mcpSkills.filter((skill: McpSkill) => {
+    return agentSkills.filter((skill: AgentSkill) => {
       const matchesCategory =
         activeCategory === "all" || skill.category === activeCategory;
       const matchesSearch =
@@ -25,11 +25,11 @@ export default function SkillsPage() {
   }, [activeCategory, searchQuery]);
 
   const hotSkills = useMemo(
-    () => mcpSkills.filter((s) => s.isHot).slice(0, 6),
+    () => agentSkills.filter((s) => s.isHot).slice(0, 6),
     []
   );
   const newSkills = useMemo(
-    () => mcpSkills.filter((s) => s.isNew).slice(0, 6),
+    () => agentSkills.filter((s) => s.isNew).slice(0, 6),
     []
   );
 
@@ -72,21 +72,21 @@ export default function SkillsPage() {
       <section className="bg-gradient-to-b from-purple-50 to-gray-50 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            MCP Skills 目录
+            Agent Skills
           </h2>
           <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-            290+ 真实MCP服务器，扩展你的AI Agent能力
+            扩展你的AI Agent能力，像Vercel Labs的find-skills一样发现和安装技能
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">
             <span>💡</span>
-            <span>MCP = Model Context Protocol，让AI安全地连接外部工具</span>
+            <span>使用 npx skills 发现和安装技能</span>
           </div>
 
           {/* Search */}
           <div className="max-w-xl mx-auto relative mt-6">
             <input
               type="text"
-              placeholder="搜索MCP服务器..."
+              placeholder="搜索Agent Skills..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full px-6 py-4 rounded-full border border-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-gray-700"
@@ -129,29 +129,8 @@ export default function SkillsPage() {
         </section>
       )}
 
-      {/* New Skills */}
-      {!searchQuery && activeCategory === "all" && (
-        <section className="py-12 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="flex items-center gap-2 mb-6">
-              <span className="text-2xl">✨</span>
-              <h3 className="text-xl font-bold text-gray-900">最新 Skills</h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {newSkills.map((skill) => (
-                <SkillCard
-                  key={skill.id}
-                  skill={skill}
-                  onClick={() => setSelectedSkill(skill)}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* All Skills */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h3 className="text-xl font-bold text-gray-900 mb-6">
             全部 Skills ({filteredSkills.length})
@@ -159,7 +138,7 @@ export default function SkillsPage() {
 
           {/* Categories */}
           <div className="flex flex-wrap gap-2 mb-8">
-            {mcpSkillCategories.map((cat) => (
+            {agentSkillCategories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
@@ -222,9 +201,6 @@ export default function SkillsPage() {
                         新上线
                       </span>
                     )}
-                    <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded-full">
-                      {selectedSkill.downloads} 下载
-                    </span>
                   </div>
                 </div>
                 <button
@@ -238,6 +214,19 @@ export default function SkillsPage() {
               </div>
 
               <p className="text-gray-600 mb-6">{selectedSkill.description}</p>
+
+              {/* Use Cases */}
+              <div className="mb-6">
+                <h4 className="font-semibold text-gray-900 mb-2">使用场景</h4>
+                <ul className="space-y-2">
+                  {selectedSkill.useCases.map((useCase, index) => (
+                    <li key={index} className="flex items-start gap-2 text-gray-600">
+                      <span className="text-purple-500">•</span>
+                      {useCase}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
               {/* Install Command */}
               <div className="bg-gray-900 rounded-lg p-4 mb-6">
@@ -282,7 +271,7 @@ export default function SkillsPage() {
               </div>
 
               <div className="mt-4 text-sm text-gray-500">
-                作者: {selectedSkill.author}
+                作者: {selectedSkill.author} | 下载: {selectedSkill.downloads}
               </div>
             </div>
           </div>
@@ -310,7 +299,7 @@ function SkillCard({
   skill,
   onClick,
 }: {
-  skill: McpSkill;
+  skill: AgentSkill;
   onClick: () => void;
 }) {
   return (
