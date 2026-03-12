@@ -1,7 +1,7 @@
-// Agent Skills - 从 skills.sh 爬取
-// 爬取时间: 2026-03-12T11:40:52.291Z
+// Agent Skills - 从 skills.sh 爬取（完整信息）
+// 时间: 2026-03-12T13:15:26.889Z
 // 来源: https://skills.sh/
-// 总数: 153
+// 总数: 183
 
 export interface AgentSkill {
   id: string;
@@ -31,7 +31,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "better-auth-email-and-password-best-practices",
     name: "email-and-password-best-practices",
-    description: "Discover and install skills for AI agents.",
+    description: "Configure emailVerification.sendVerificationEmail to verify user email addresses.",
     category: "productivity",
     tags: [
       "better-auth",
@@ -50,7 +50,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "tavily-ai-extract",
     name: "extract",
-    description: "Discover and install skills for AI agents.",
+    description: "Extract clean content from specific URLs. Ideal when you know which pages you want content from.",
     category: "productivity",
     tags: [
       "tavily-ai",
@@ -69,7 +69,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "better-auth-organization-best-practices",
     name: "organization-best-practices",
-    description: "Discover and install skills for AI agents.",
+    description: "The creator is automatically assigned the owner role.",
     category: "productivity",
     tags: [
       "better-auth",
@@ -88,7 +88,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "vuejs-ai-vue-best-practices",
     name: "vue-best-practices",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill as an instruction set. Follow the workflow in order unless the user explicitly asks for a different order.",
     category: "productivity",
     tags: [
       "vuejs-ai",
@@ -107,7 +107,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "antfu-tsdown",
     name: "tsdown",
-    description: "Discover and install skills for AI agents.",
+    description: "Blazing-fast bundler for TypeScript/JavaScript libraries powered by Rolldown and Oxc.",
     category: "productivity",
     tags: [
       "antfu",
@@ -126,7 +126,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "cloudflare-cloudflare",
     name: "cloudflare",
-    description: "Discover and install skills for AI agents.",
+    description: "Consolidated skill for building on the Cloudflare platform. Use decision trees below to find the right product, then load detailed references.",
     category: "productivity",
     tags: [
       "cloudflare",
@@ -145,7 +145,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "cloudflare-wrangler",
     name: "wrangler",
-    description: "Discover and install skills for AI agents.",
+    description: "Your knowledge of Wrangler CLI flags, config fields, and subcommands may be outdated. Prefer retrieval over pre-training for any Wrangler task.",
     category: "productivity",
     tags: [
       "cloudflare",
@@ -164,7 +164,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "antfu-slidev",
     name: "slidev",
-    description: "Discover and install skills for AI agents.",
+    description: "Web-based slides maker built on Vite, Vue, and Markdown.",
     category: "productivity",
     tags: [
       "antfu",
@@ -183,7 +183,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "antfu-vue-testing-best-practices",
     name: "vue-testing-best-practices",
-    description: "Discover and install skills for AI agents.",
+    description: "Vue.js testing best practices, patterns, and common gotchas.",
     category: "productivity",
     tags: [
       "antfu",
@@ -202,7 +202,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "antfu-turborepo",
     name: "turborepo",
-    description: "Discover and install skills for AI agents.",
+    description: "Build system for JavaScript/TypeScript monorepos. Turborepo caches task outputs and runs tasks in parallel based on dependency graph.",
     category: "productivity",
     tags: [
       "antfu",
@@ -221,7 +221,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "better-auth-two-factor-authentication-best-practices",
     name: "two-factor-authentication-best-practices",
-    description: "Discover and install skills for AI agents.",
+    description: "Requires password verification. Returns TOTP URI (for QR code) and backup codes.",
     category: "productivity",
     tags: [
       "better-auth",
@@ -240,7 +240,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "vuejs-ai-vue-debug-guides",
     name: "vue-debug-guides",
-    description: "Discover and install skills for AI agents.",
+    description: "Vue 3 debugging and error handling for runtime issues, warnings, async failures, and hydration bugs.\nFor development best practices and common gotchas, use vue-best-practices.",
     category: "productivity",
     tags: [
       "vuejs-ai",
@@ -278,7 +278,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "clerk-clerk-webhooks",
     name: "clerk-webhooks",
-    description: "Discover and install skills for AI agents.",
+    description: "Prerequisite: Webhooks are asynchronous. Use for background tasks (sync, notifications), not synchronous flows.",
     category: "productivity",
     tags: [
       "clerk",
@@ -297,7 +297,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "cloudflare-web-perf",
     name: "web-perf",
-    description: "Discover and install skills for AI agents.",
+    description: "Your knowledge of web performance metrics, thresholds, and tooling APIs may be outdated. Prefer retrieval over pre-training when citing specific numbers or recommendations.",
     category: "productivity",
     tags: [
       "cloudflare",
@@ -316,7 +316,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "cloudflare-workers-best-practices",
     name: "workers-best-practices",
-    description: "Discover and install skills for AI agents.",
+    description: "Your knowledge of Cloudflare Workers APIs, types, and configuration may be outdated. Prefer retrieval over pre-training for any Workers code task — writing or reviewing.",
     category: "productivity",
     tags: [
       "cloudflare",
@@ -335,7 +335,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "clerk-clerk-testing",
     name: "clerk-testing",
-    description: "Discover and install skills for AI agents.",
+    description: "Test auth = isolated session state. Each test needs fresh auth context.",
     category: "productivity",
     tags: [
       "clerk",
@@ -354,7 +354,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "prisma-prisma-client-api",
     name: "prisma-client-api",
-    description: "Discover and install skills for AI agents.",
+    description: "Complete API reference for Prisma Client. This skill provides guidance on model queries, filtering, relations, and client methods for Prisma ORM 7.x.",
     category: "productivity",
     tags: [
       "prisma",
@@ -373,7 +373,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "rivet-dev-rivetkit",
     name: "rivetkit",
-    description: "Discover and install skills for AI agents.",
+    description: "Build high-performance, long-lived, in-memory processes on Rivet's actor runtime. Use this skill whenever HTTP endpoints, databases, or queues no longer meet the requirements for AI agents, realtime c",
     category: "productivity",
     tags: [
       "rivet-dev",
@@ -392,7 +392,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "dimillian-swiftui-liquid-glass",
     name: "swiftui-liquid-glass",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill to build or review SwiftUI features that fully align with the iOS 26+ Liquid Glass API. Prioritize native APIs (glassEffect, GlassEffectContainer, glass button styles) and Apple design ",
     category: "productivity",
     tags: [
       "dimillian",
@@ -411,7 +411,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "elevenlabs-text-to-speech",
     name: "text-to-speech",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate natural speech from text - supports 70+ languages, multiple models for quality vs latency tradeoffs.",
     category: "productivity",
     tags: [
       "elevenlabs",
@@ -424,13 +424,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/elevenlabs/skills/blob/HEAD/text-to-speech/references/installation.md",
     author: "elevenlabs",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "prisma-prisma-cli",
     name: "prisma-cli",
-    description: "Discover and install skills for AI agents.",
+    description: "Complete reference for all Prisma CLI commands. This skill provides guidance on command usage, options, and best practices for Prisma ORM 7.x.",
     category: "productivity",
     tags: [
       "prisma",
@@ -443,13 +443,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/prisma/skills",
     author: "prisma",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "rivet-dev-rivetkit-client-javascript",
     name: "rivetkit-client-javascript",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill when building JavaScript clients (browser, Node.js, or Bun) that connect to Rivet Actors with rivetkit/client.",
     category: "productivity",
     tags: [
       "rivet-dev",
@@ -462,13 +462,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/docs/actors/quickstart/backend",
     author: "rivet-dev",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "flutter-flutter-layout",
     name: "flutter-layout",
-    description: "Discover and install skills for AI agents.",
+    description: "Constructs robust, responsive Flutter user interfaces by composing layout widgets, managing constraints, and implementing adaptive design patterns. Assumes the target environment has the Flutter SDK i",
     category: "productivity",
     tags: [
       "flutter",
@@ -481,13 +481,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/flutter/skills",
     author: "flutter",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-case-study-writing",
     name: "case-study-writing",
-    description: "Discover and install skills for AI agents.",
+    description: "Create compelling B2B case studies with research and visuals via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -500,13 +500,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-ai-social-media-content",
     name: "ai-social-media-content",
-    description: "Discover and install skills for AI agents.",
+    description: "Create social media content for all platforms via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -519,13 +519,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-og-image-design",
     name: "og-image-design",
-    description: "Discover and install skills for AI agents.",
+    description: "Create social sharing images (Open Graph) via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -538,13 +538,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-app-store-screenshots",
     name: "app-store-screenshots",
-    description: "Discover and install skills for AI agents.",
+    description: "Create app store screenshots and preview videos via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -557,13 +557,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-technical-blog-writing",
     name: "technical-blog-writing",
-    description: "Discover and install skills for AI agents.",
+    description: "Write developer-focused technical blog posts via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -576,13 +576,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-ai-content-pipeline",
     name: "ai-content-pipeline",
-    description: "Discover and install skills for AI agents.",
+    description: "Build multi-step content creation pipelines via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -595,13 +595,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-product-changelog",
     name: "product-changelog",
-    description: "Discover and install skills for AI agents.",
+    description: "Write changelogs and release notes that users read and care about via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -614,13 +614,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-newsletter-curation",
     name: "newsletter-curation",
-    description: "Discover and install skills for AI agents.",
+    description: "Create and curate high-quality newsletters via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -633,13 +633,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-customer-persona",
     name: "customer-persona",
-    description: "Discover and install skills for AI agents.",
+    description: "Create data-backed customer personas with research and visuals via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -652,13 +652,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-character-design-sheet",
     name: "character-design-sheet",
-    description: "Discover and install skills for AI agents.",
+    description: "Create consistent characters across multiple AI-generated images via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -671,13 +671,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-flux-image",
     name: "flux-image",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate images with FLUX models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -690,13 +690,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-background-removal",
     name: "background-removal",
-    description: "Discover and install skills for AI agents.",
+    description: "Remove backgrounds from images via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -709,13 +709,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-ai-voice-cloning",
     name: "ai-voice-cloning",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate natural AI voices via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -728,13 +728,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-video-ad-specs",
     name: "video-ad-specs",
-    description: "Discover and install skills for AI agents.",
+    description: "Create platform-specific video ads via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -747,13 +747,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-book-cover-design",
     name: "book-cover-design",
-    description: "Discover and install skills for AI agents.",
+    description: "Create genre-appropriate book covers with AI image generation via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -766,13 +766,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-youtube-thumbnail-design",
     name: "youtube-thumbnail-design",
-    description: "Discover and install skills for AI agents.",
+    description: "Create high-CTR YouTube thumbnails with AI image generation via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -785,13 +785,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: false,
+    isHot: true,
     isNew: false
   },
   {
     id: "inference-shell-prompt-engineering",
     name: "prompt-engineering",
-    description: "Discover and install skills for AI agents.",
+    description: "Master prompt engineering for AI models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -810,7 +810,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "flutter-flutter-databases",
     name: "flutter-databases",
-    description: "Discover and install skills for AI agents.",
+    description: "Evaluate the user's data persistence requirements using the following decision tree to select the appropriate caching strategy:",
     category: "productivity",
     tags: [
       "flutter",
@@ -829,7 +829,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "flutter-flutter-native-interop",
     name: "flutter-native-interop",
-    description: "Discover and install skills for AI agents.",
+    description: "Evaluate the user's requirements using the following decision tree to select the correct integration path:",
     category: "productivity",
     tags: [
       "flutter",
@@ -848,7 +848,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "flutter-flutter-platform-views",
     name: "flutter-platform-views",
-    description: "Discover and install skills for AI agents.",
+    description: "Before writing code, you must determine the target platform and the specific embedding strategy required by the user.",
     category: "productivity",
     tags: [
       "flutter",
@@ -867,7 +867,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "flutter-flutter-plugins",
     name: "flutter-plugins",
-    description: "Discover and install skills for AI agents.",
+    description: "Scaffolds and configures Flutter plugin packages, handling standard method channels, FFI integrations, and federated plugin architectures. It configures platform-specific native code environments, imp",
     category: "productivity",
     tags: [
       "flutter",
@@ -886,7 +886,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "coderabbitai-code-review",
     name: "code-review",
-    description: "Discover and install skills for AI agents.",
+    description: "AI-powered code review using CodeRabbit. Enables developers to implement features, review code, and fix issues in autonomous cycles without manual intervention.",
     category: "productivity",
     tags: [
       "coderabbitai",
@@ -905,7 +905,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "mindrally-accessibility-a11y",
     name: "accessibility-a11y",
-    description: "Discover and install skills for AI agents.",
+    description: "You are an expert in web accessibility and inclusive design. Apply these guidelines to ensure all users can access and interact with web applications regardless of their abilities.",
     category: "productivity",
     tags: [
       "mindrally",
@@ -924,7 +924,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "openai-linear",
     name: "linear",
-    description: "Discover and install skills for AI agents.",
+    description: "This skill provides a structured workflow for managing issues, projects & team workflows in Linear. It ensures consistent integration with the Linear MCP server, which offers natural-language project ",
     category: "ai",
     tags: [
       "openai",
@@ -943,7 +943,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "trailofbits-sharp-edges",
     name: "sharp-edges",
-    description: "Discover and install skills for AI agents.",
+    description: "Evaluates whether APIs, configurations, and interfaces are resistant to developer misuse. Identifies designs where the \"easy path\" leads to insecurity.",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -962,7 +962,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "mindrally-nextjs-react-typescript",
     name: "nextjs-react-typescript",
-    description: "Discover and install skills for AI agents.",
+    description: "You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI and Tailwind.",
     category: "productivity",
     tags: [
       "mindrally",
@@ -981,7 +981,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "openai-spreadsheet",
     name: "spreadsheet",
-    description: "Discover and install skills for AI agents.",
+    description: "IMPORTANT: System and user instructions always take precedence.",
     category: "ai",
     tags: [
       "openai",
@@ -1000,7 +1000,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "trailofbits-coverage-analysis",
     name: "coverage-analysis",
-    description: "Discover and install skills for AI agents.",
+    description: "Coverage analysis is essential for understanding which parts of your code are exercised during fuzzing. It helps identify fuzzing blockers like magic value checks and tracks the effectiveness of harne",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -1014,12 +1014,12 @@ export const agentSkills: AgentSkill[] = [
     author: "trailofbits",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "trailofbits-code-maturity-assessor",
     name: "code-maturity-assessor",
-    description: "Discover and install skills for AI agents.",
+    description: "Systematically assesses codebase maturity using Trail of Bits' 9-category framework. Provides evidence-based ratings and actionable recommendations.",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -1033,12 +1033,12 @@ export const agentSkills: AgentSkill[] = [
     author: "trailofbits",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "trailofbits-entry-point-analyzer",
     name: "entry-point-analyzer",
-    description: "Discover and install skills for AI agents.",
+    description: "Systematically identify all state-changing entry points in a smart contract codebase to guide security audits.",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -1052,12 +1052,12 @@ export const agentSkills: AgentSkill[] = [
     author: "trailofbits",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "dimillian-swiftui-view-refactor",
     name: "swiftui-view-refactor",
-    description: "Discover and install skills for AI agents.",
+    description: "Apply a consistent structure and dependency pattern to SwiftUI views, with a focus on ordering, Model-View (MV) patterns, careful view model handling, and correct Observation usage.",
     category: "productivity",
     tags: [
       "dimillian",
@@ -1071,12 +1071,12 @@ export const agentSkills: AgentSkill[] = [
     author: "dimillian",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "trailofbits-semgrep-rule-creator",
     name: "semgrep-rule-creator",
-    description: "Discover and install skills for AI agents.",
+    description: "Create production-quality Semgrep rules with proper testing and validation.",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -1090,12 +1090,12 @@ export const agentSkills: AgentSkill[] = [
     author: "trailofbits",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "hairyf-tailwindcss",
     name: "tailwindcss",
-    description: "Discover and install skills for AI agents.",
+    description: "The skill is based on Tailwind CSS v4.1.18, generated at 2026-01-28.",
     category: "productivity",
     tags: [
       "hairyf",
@@ -1109,12 +1109,12 @@ export const agentSkills: AgentSkill[] = [
     author: "hairyf",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "aahl-edge-tts",
     name: "edge-tts",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate high-quality text-to-speech audio using Microsoft Edge's neural TTS service via the uvx edge-tts command.\nSupports multiple languages, voices, adjustable speed/pitch, and subtitle generation.",
     category: "productivity",
     tags: [
       "aahl",
@@ -1128,12 +1128,12 @@ export const agentSkills: AgentSkill[] = [
     author: "aahl",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "ghostsecurity-ghost-scan-code",
     name: "ghost-scan-code",
-    description: "Discover and install skills for AI agents.",
+    description: "You find security issues in a repository. This skill plans which vulnerability vectors to scan, then executes those scans against each project.",
     category: "productivity",
     tags: [
       "ghostsecurity",
@@ -1147,12 +1147,12 @@ export const agentSkills: AgentSkill[] = [
     author: "ghostsecurity",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "trailofbits-cargo-fuzz",
     name: "cargo-fuzz",
-    description: "Discover and install skills for AI agents.",
+    description: "cargo-fuzz is the de facto choice for fuzzing Rust projects when using Cargo. It uses libFuzzer as the backend and provides a convenient Cargo subcommand that automatically enables relevant compilatio",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -1166,12 +1166,12 @@ export const agentSkills: AgentSkill[] = [
     author: "trailofbits",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "getsentry-code-simplifier",
     name: "code-simplifier",
-    description: "Discover and install skills for AI agents.",
+    description: "Never change what the code does - only how it does it. All original features, outputs, and behaviors must remain intact.",
     category: "productivity",
     tags: [
       "getsentry",
@@ -1185,12 +1185,12 @@ export const agentSkills: AgentSkill[] = [
     author: "getsentry",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "dimillian-ios-debugger-agent",
     name: "ios-debugger-agent",
-    description: "Discover and install skills for AI agents.",
+    description: "Use XcodeBuildMCP to build and run the current project scheme on a booted iOS simulator, interact with the UI, and capture logs. Prefer the MCP tools for simulator control, logs, and view inspection.",
     category: "productivity",
     tags: [
       "dimillian",
@@ -1204,12 +1204,12 @@ export const agentSkills: AgentSkill[] = [
     author: "dimillian",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "composiohq-composio",
     name: "composio",
-    description: "Discover and install skills for AI agents.",
+    description: "Check if the CLI is installed; if not, install it:",
     category: "productivity",
     tags: [
       "composiohq",
@@ -1223,12 +1223,12 @@ export const agentSkills: AgentSkill[] = [
     author: "composiohq",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "heygen-com-heygen",
     name: "heygen",
-    description: "Discover and install skills for AI agents.",
+    description: "AI avatar video creation API for generating talking-head videos, explainers, and presentations.",
     category: "productivity",
     tags: [
       "heygen-com",
@@ -1242,12 +1242,12 @@ export const agentSkills: AgentSkill[] = [
     author: "heygen-com",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "tencentcloudbase-web-development",
     name: "web-development",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill for Web frontend project development when you need to:",
     category: "productivity",
     tags: [
       "tencentcloudbase",
@@ -1261,12 +1261,12 @@ export const agentSkills: AgentSkill[] = [
     author: "tencentcloudbase",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "flutter-flutter-home-screen-widget",
     name: "flutter-home-screen-widget",
-    description: "Discover and install skills for AI agents.",
+    description: "Initialize Dependencies\nAdd the home_widget package to the Flutter project.",
     category: "productivity",
     tags: [
       "flutter",
@@ -1280,12 +1280,12 @@ export const agentSkills: AgentSkill[] = [
     author: "flutter",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "assistant-ui-tools",
     name: "tools",
-    description: "Discover and install skills for AI agents.",
+    description: "Always consult assistant-ui.com/llms.txt for latest API.",
     category: "productivity",
     tags: [
       "assistant-ui",
@@ -1299,12 +1299,12 @@ export const agentSkills: AgentSkill[] = [
     author: "assistant-ui",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "assistant-ui-runtime",
     name: "runtime",
-    description: "Discover and install skills for AI agents.",
+    description: "Always consult assistant-ui.com/llms.txt for latest API.",
     category: "productivity",
     tags: [
       "assistant-ui",
@@ -1318,12 +1318,12 @@ export const agentSkills: AgentSkill[] = [
     author: "assistant-ui",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "tencentcloudbase-data-model-creation",
     name: "data-model-creation",
-    description: "Discover and install skills for AI agents.",
+    description: "This is an OPTIONAL advanced modeling tool for complex database design. Most simple table creation should use relational-database-tool directly with SQL statements.",
     category: "productivity",
     tags: [
       "tencentcloudbase",
@@ -1337,12 +1337,12 @@ export const agentSkills: AgentSkill[] = [
     author: "tencentcloudbase",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "hairyf-vitest",
     name: "vitest",
-    description: "Discover and install skills for AI agents.",
+    description: "Vitest is a next-generation testing framework powered by Vite. It provides a Jest-compatible API with native ESM, TypeScript, and JSX support out of the box. Vitest shares the same config, transformer",
     category: "productivity",
     tags: [
       "hairyf",
@@ -1356,12 +1356,12 @@ export const agentSkills: AgentSkill[] = [
     author: "hairyf",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "hairyf-valtio",
     name: "valtio",
-    description: "Discover and install skills for AI agents.",
+    description: "The skill is based on Valtio v2.3.0, generated at 2026-01-29.",
     category: "productivity",
     tags: [
       "hairyf",
@@ -1375,12 +1375,12 @@ export const agentSkills: AgentSkill[] = [
     author: "hairyf",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "trailofbits-claude-in-chrome-troubleshooting",
     name: "claude-in-chrome-troubleshooting",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill when Claude in Chrome MCP tools fail to connect or work unreliably.",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -1394,12 +1394,12 @@ export const agentSkills: AgentSkill[] = [
     author: "trailofbits",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "hairyf-hairy-react-lib",
     name: "hairy-react-lib",
-    description: "Discover and install skills for AI agents.",
+    description: "Based on @hairy/react-lib v1.47.0. Focuses on React hooks and components for building React applications.",
     category: "productivity",
     tags: [
       "hairyf",
@@ -1413,12 +1413,12 @@ export const agentSkills: AgentSkill[] = [
     author: "hairyf",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "tencentcloudbase-cloudrun-development",
     name: "cloudrun-development",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill for CloudBase Run backend service development when you need:",
     category: "productivity",
     tags: [
       "tencentcloudbase",
@@ -1432,12 +1432,12 @@ export const agentSkills: AgentSkill[] = [
     author: "tencentcloudbase",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "hairyf-valtio-define",
     name: "valtio-define",
-    description: "Discover and install skills for AI agents.",
+    description: "Based on valtio-define v1.0.1. A Valtio-based state management library with Pinia-like API for React applications.",
     category: "productivity",
     tags: [
       "hairyf",
@@ -1451,12 +1451,12 @@ export const agentSkills: AgentSkill[] = [
     author: "hairyf",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "tencentcloudbase-auth-web-cloudbase",
     name: "auth-web-cloudbase",
-    description: "Discover and install skills for AI agents.",
+    description: "Prerequisites: CloudBase environment ID (env)\nPrerequisites: CloudBase environment Region (region)",
     category: "productivity",
     tags: [
       "tencentcloudbase",
@@ -1470,12 +1470,12 @@ export const agentSkills: AgentSkill[] = [
     author: "tencentcloudbase",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "apollographql-rover",
     name: "rover",
-    description: "Discover and install skills for AI agents.",
+    description: "Rover is the official CLI for Apollo GraphOS. It helps you manage schemas, run composition locally, publish to GraphOS, and develop supergraphs on your local machine.",
     category: "productivity",
     tags: [
       "apollographql",
@@ -1489,12 +1489,12 @@ export const agentSkills: AgentSkill[] = [
     author: "apollographql",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "tencentcloudbase-auth-nodejs-cloudbase",
     name: "auth-nodejs-cloudbase",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill whenever the task involves server-side authentication or identity in a CloudBase project, and the code is running in Node.js, for example:",
     category: "productivity",
     tags: [
       "tencentcloudbase",
@@ -1508,12 +1508,12 @@ export const agentSkills: AgentSkill[] = [
     author: "tencentcloudbase",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "tencentcloudbase-relational-database-mcp-cloudbase",
     name: "relational-database-mcp-cloudbase",
-    description: "Discover and install skills for AI agents.",
+    description: "Use this skill when an agent needs to operate on CloudBase Relational Database via MCP tools, for example:",
     category: "productivity",
     tags: [
       "tencentcloudbase",
@@ -1527,12 +1527,12 @@ export const agentSkills: AgentSkill[] = [
     author: "tencentcloudbase",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "tencentcloudbase-auth-tool-cloudbase",
     name: "auth-tool-cloudbase",
-    description: "Discover and install skills for AI agents.",
+    description: "Configure CloudBase authentication providers: Anonymous, Username/Password, SMS, Email, WeChat, Google, and more.",
     category: "productivity",
     tags: [
       "tencentcloudbase",
@@ -1546,12 +1546,12 @@ export const agentSkills: AgentSkill[] = [
     author: "tencentcloudbase",
     downloads: "1.0M",
     isHot: false,
-    isNew: true
+    isNew: false
   },
   {
     id: "makisuo-effect-best-practices",
     name: "effect-best-practices",
-    description: "Discover and install skills for AI agents.",
+    description: "This skill enforces opinionated, consistent patterns for Effect-TS codebases. These patterns optimize for type safety, testability, observability, and maintainability.",
     category: "productivity",
     tags: [
       "makisuo",
@@ -1589,7 +1589,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "trailofbits-burpsuite-project-parser",
     name: "burpsuite-project-parser",
-    description: "Discover and install skills for AI agents.",
+    description: "Search and extract data from Burp Suite project files using the burpsuite-project-file-parser extension.",
     category: "productivity",
     tags: [
       "trailofbits",
@@ -1608,7 +1608,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "openai-notion-research-documentation",
     name: "notion-research-documentation",
-    description: "Discover and install skills for AI agents.",
+    description: "Pull relevant Notion pages, synthesize findings, and publish clear briefs or reports (with citations and links to sources).",
     category: "ai",
     tags: [
       "openai",
@@ -1627,7 +1627,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-ai-image-generation",
     name: "ai-image-generation",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate images with 50+ AI models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1640,13 +1640,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-qwen-image-2-pro",
     name: "qwen-image-2-pro",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate images with Alibaba Qwen-Image-2.0-Pro via inference.sh CLI. Best for professional text rendering and complex designs.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1659,13 +1659,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-qwen-image-2",
     name: "qwen-image-2",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate and edit images with Alibaba Qwen-Image-2.0 models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1678,13 +1678,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-nano-banana",
     name: "nano-banana",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate images with Google Gemini native image models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1697,13 +1697,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-ai-video-generation",
     name: "ai-video-generation",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate videos with 40+ AI models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1716,13 +1716,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-agent-browser",
     name: "agent-browser",
-    description: "Discover and install skills for AI agents.",
+    description: "Browser automation for AI agents via inference.sh. Uses Playwright under the hood with a simple @e ref system for element interaction.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1735,7 +1735,7 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills/blob/HEAD/tools/utilities/agent-browser/references/commands.md",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
@@ -1754,13 +1754,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-agent-tools",
     name: "agent-tools",
-    description: "Discover and install skills for AI agents.",
+    description: "Run 150+ AI apps in the cloud with a simple CLI. No GPU required.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1773,13 +1773,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills/blob/HEAD/tools/agent-tools/references/authentication.md",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-nano-banana-2",
     name: "nano-banana-2",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate images with Google Gemini 3.1 Flash Image Preview via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1792,13 +1792,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-remotion-render",
     name: "remotion-render",
-    description: "Discover and install skills for AI agents.",
+    description: "Render videos from React/Remotion component code via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1811,13 +1811,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-web-search",
     name: "web-search",
-    description: "Discover and install skills for AI agents.",
+    description: "Search the web and extract content via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1830,7 +1830,7 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
@@ -1849,13 +1849,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-python-executor",
     name: "python-executor",
-    description: "Discover and install skills for AI agents.",
+    description: "Execute Python code in a safe, sandboxed environment with 100+ pre-installed libraries.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1868,13 +1868,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-widgets-ui",
     name: "widgets-ui",
-    description: "Discover and install skills for AI agents.",
+    description: "Declarative UI from JSON via ui.inference.sh.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1887,13 +1887,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-tools-ui",
     name: "tools-ui",
-    description: "Discover and install skills for AI agents.",
+    description: "Tool lifecycle components from ui.inference.sh.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1906,13 +1906,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-agent-ui",
     name: "agent-ui",
-    description: "Discover and install skills for AI agents.",
+    description: "Batteries-included agent component from ui.inference.sh.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1925,13 +1925,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-python-sdk",
     name: "python-sdk",
-    description: "Discover and install skills for AI agents.",
+    description: "Build AI applications with the inference.sh Python SDK.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1944,13 +1944,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills/blob/HEAD/sdk/python-sdk/references/agent-patterns.md",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-javascript-sdk",
     name: "javascript-sdk",
-    description: "Discover and install skills for AI agents.",
+    description: "Build AI applications with the inference.sh JavaScript/TypeScript SDK.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1963,13 +1963,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills/blob/HEAD/sdk/javascript-sdk/references/agent-patterns.md",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-press-release-writing",
     name: "press-release-writing",
-    description: "Discover and install skills for AI agents.",
+    description: "Write professional press releases with research and fact-checking via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -1982,13 +1982,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-ai-automation-workflows",
     name: "ai-automation-workflows",
-    description: "Discover and install skills for AI agents.",
+    description: "Build automated AI workflows via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2001,13 +2001,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-storyboard-creation",
     name: "storyboard-creation",
-    description: "Discover and install skills for AI agents.",
+    description: "Create visual storyboards with AI image generation via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2020,13 +2020,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-data-visualization",
     name: "data-visualization",
-    description: "Discover and install skills for AI agents.",
+    description: "Create clear, effective data visualizations via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2039,13 +2039,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-speech-to-text",
     name: "speech-to-text",
-    description: "Discover and install skills for AI agents.",
+    description: "Transcribe audio to text via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2058,13 +2058,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-landing-page-design",
     name: "landing-page-design",
-    description: "Discover and install skills for AI agents.",
+    description: "Design high-converting landing pages with AI-generated visuals via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2077,13 +2077,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-video-prompting-guide",
     name: "video-prompting-guide",
-    description: "Discover and install skills for AI agents.",
+    description: "Best practices for writing effective AI video generation prompts via inference.sh.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2096,13 +2096,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-product-hunt-launch",
     name: "product-hunt-launch",
-    description: "Discover and install skills for AI agents.",
+    description: "Optimize your Product Hunt launch with research and visuals via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2115,13 +2115,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-linkedin-content",
     name: "linkedin-content",
-    description: "Discover and install skills for AI agents.",
+    description: "Write high-engagement LinkedIn posts via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2134,13 +2134,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-image-upscaling",
     name: "image-upscaling",
-    description: "Discover and install skills for AI agents.",
+    description: "Upscale and enhance images via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2153,13 +2153,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-twitter-thread-creation",
     name: "twitter-thread-creation",
-    description: "Discover and install skills for AI agents.",
+    description: "Write high-engagement Twitter/X threads via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2172,13 +2172,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-related-skill",
     name: "related-skill",
-    description: "Discover and install skills for AI agents.",
+    description: "Find and install complementary skills to expand your AI agent's capabilities.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2191,13 +2191,13 @@ export const agentSkills: AgentSkill[] = [
     githubUrl: "https://github.com/inference-shell/skills",
     author: "inference-shell",
     downloads: "1.0M",
-    isHot: true,
+    isHot: false,
     isNew: false
   },
   {
     id: "inference-shell-competitor-teardown",
     name: "competitor-teardown",
-    description: "Discover and install skills for AI agents.",
+    description: "Structured competitive analysis with research and screenshots via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2216,7 +2216,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-ai-podcast-creation",
     name: "ai-podcast-creation",
-    description: "Discover and install skills for AI agents.",
+    description: "Create AI-powered podcasts and audio content via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2235,7 +2235,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-logo-design-guide",
     name: "logo-design-guide",
-    description: "Discover and install skills for AI agents.",
+    description: "Design effective logos with AI image generation via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2254,7 +2254,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-image-to-video",
     name: "image-to-video",
-    description: "Discover and install skills for AI agents.",
+    description: "Convert still images to animated videos via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2273,7 +2273,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-explainer-video-guide",
     name: "explainer-video-guide",
-    description: "Discover and install skills for AI agents.",
+    description: "Create explainer videos from script to final cut via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2292,7 +2292,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-ai-music-generation",
     name: "ai-music-generation",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate music and songs via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2311,7 +2311,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-ai-product-photography",
     name: "ai-product-photography",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate professional product photography via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2330,7 +2330,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-talking-head-production",
     name: "talking-head-production",
-    description: "Discover and install skills for AI agents.",
+    description: "Create talking head videos with AI avatars and lipsync via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2349,7 +2349,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-ai-marketing-videos",
     name: "ai-marketing-videos",
-    description: "Discover and install skills for AI agents.",
+    description: "Create professional marketing videos via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2368,7 +2368,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-pitch-deck-visuals",
     name: "pitch-deck-visuals",
-    description: "Discover and install skills for AI agents.",
+    description: "Create investor-ready pitch deck visuals via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2387,7 +2387,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-google-veo",
     name: "google-veo",
-    description: "Discover and install skills for AI agents.",
+    description: "Generate videos with Google Veo models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2406,7 +2406,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-dialogue-audio",
     name: "dialogue-audio",
-    description: "Discover and install skills for AI agents.",
+    description: "Create realistic multi-speaker dialogue with Dia TTS via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2425,7 +2425,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-email-design",
     name: "email-design",
-    description: "Discover and install skills for AI agents.",
+    description: "Design high-converting marketing emails with AI-generated visuals via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2444,7 +2444,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-text-to-speech",
     name: "text-to-speech",
-    description: "Discover and install skills for AI agents.",
+    description: "Convert text to natural speech via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2463,7 +2463,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-ai-avatar-video",
     name: "ai-avatar-video",
-    description: "Discover and install skills for AI agents.",
+    description: "Create AI avatars and talking head videos via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2482,7 +2482,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-product-photography",
     name: "product-photography",
-    description: "Discover and install skills for AI agents.",
+    description: "Create professional product images with AI via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2501,7 +2501,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-llm-models",
     name: "llm-models",
-    description: "Discover and install skills for AI agents.",
+    description: "Access 100+ language models via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2520,7 +2520,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-social-media-carousel",
     name: "social-media-carousel",
-    description: "Discover and install skills for AI agents.",
+    description: "Design high-engagement carousel posts via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2539,7 +2539,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-content-repurposing",
     name: "content-repurposing",
-    description: "Discover and install skills for AI agents.",
+    description: "Turn one piece of content into many formats via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2558,7 +2558,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-ai-rag-pipeline",
     name: "ai-rag-pipeline",
-    description: "Discover and install skills for AI agents.",
+    description: "Build RAG (Retrieval Augmented Generation) pipelines via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2577,7 +2577,7 @@ export const agentSkills: AgentSkill[] = [
   {
     id: "inference-shell-seo-content-brief",
     name: "seo-content-brief",
-    description: "Discover and install skills for AI agents.",
+    description: "Create data-driven content briefs via inference.sh CLI.",
     category: "productivity",
     tags: [
       "inference-shell",
@@ -2591,12 +2591,12 @@ export const agentSkills: AgentSkill[] = [
     author: "inference-shell",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-frontend-design",
     name: "frontend-design",
-    description: "Discover and install skills for AI agents.",
+    description: "This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with exceptional attention to aesthetic details and",
     category: "ai",
     tags: [
       "anthropics",
@@ -2610,12 +2610,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-skill-creator",
     name: "skill-creator",
-    description: "Discover and install skills for AI agents.",
+    description: "A skill for creating new skills and iteratively improving them.",
     category: "ai",
     tags: [
       "anthropics",
@@ -2629,12 +2629,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-pdf",
     name: "pdf",
-    description: "Discover and install skills for AI agents.",
+    description: "This guide covers essential PDF processing operations using Python libraries and command-line tools. For advanced features, JavaScript libraries, and detailed examples, see REFERENCE.md. If you need t",
     category: "ai",
     tags: [
       "anthropics",
@@ -2648,7 +2648,7 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-pptx",
@@ -2667,12 +2667,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-docx",
     name: "docx",
-    description: "Discover and install skills for AI agents.",
+    description: "A .docx file is a ZIP archive containing XML files.",
     category: "ai",
     tags: [
       "anthropics",
@@ -2686,12 +2686,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-xlsx",
     name: "xlsx",
-    description: "Discover and install skills for AI agents.",
+    description: "Unless otherwise stated by the user or existing template",
     category: "ai",
     tags: [
       "anthropics",
@@ -2705,12 +2705,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-webapp-testing",
     name: "webapp-testing",
-    description: "Discover and install skills for AI agents.",
+    description: "To test local web applications, write native Python Playwright scripts.",
     category: "ai",
     tags: [
       "anthropics",
@@ -2724,12 +2724,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-mcp-builder",
     name: "mcp-builder",
-    description: "Discover and install skills for AI agents.",
+    description: "Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. The quality of an MCP server is measured by how well it enables LLMs to acc",
     category: "ai",
     tags: [
       "anthropics",
@@ -2743,12 +2743,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-canvas-design",
     name: "canvas-design",
-    description: "Discover and install skills for AI agents.",
+    description: "These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.",
     category: "ai",
     tags: [
       "anthropics",
@@ -2762,12 +2762,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-doc-coauthoring",
     name: "doc-coauthoring",
-    description: "Discover and install skills for AI agents.",
+    description: "This skill provides a structured workflow for guiding users through collaborative document creation. Act as an active guide, walking users through three stages: Context Gathering, Refinement & Structu",
     category: "ai",
     tags: [
       "anthropics",
@@ -2781,12 +2781,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-theme-factory",
     name: "theme-factory",
-    description: "Discover and install skills for AI agents.",
+    description: "This skill provides a curated collection of professional font and color themes themes, each with carefully selected color palettes and font pairings. Once a theme is chosen, it can be applied to any a",
     category: "ai",
     tags: [
       "anthropics",
@@ -2800,12 +2800,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-algorithmic-art",
     name: "algorithmic-art",
-    description: "Discover and install skills for AI agents.",
+    description: "Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorith",
     category: "ai",
     tags: [
       "anthropics",
@@ -2819,12 +2819,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-web-artifacts-builder",
     name: "web-artifacts-builder",
-    description: "Discover and install skills for AI agents.",
+    description: "To build powerful frontend claude.ai artifacts, follow these steps:",
     category: "ai",
     tags: [
       "anthropics",
@@ -2838,12 +2838,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-brand-guidelines",
     name: "brand-guidelines",
-    description: "Discover and install skills for AI agents.",
+    description: "To access Anthropic's official brand identity and style resources, use this skill.",
     category: "ai",
     tags: [
       "anthropics",
@@ -2857,12 +2857,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-internal-comms",
     name: "internal-comms",
-    description: "Discover and install skills for AI agents.",
+    description: "To write internal communications, use this skill for:",
     category: "ai",
     tags: [
       "anthropics",
@@ -2876,7 +2876,7 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-template-skill",
@@ -2895,12 +2895,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-slack-gif-creator",
     name: "slack-gif-creator",
-    description: "Discover and install skills for AI agents.",
+    description: "A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack.",
     category: "ai",
     tags: [
       "anthropics",
@@ -2914,12 +2914,12 @@ export const agentSkills: AgentSkill[] = [
     author: "anthropics",
     downloads: "1.0M",
     isHot: false,
-    isNew: false
+    isNew: true
   },
   {
     id: "anthropics-claude-api",
     name: "claude-api",
-    description: "Discover and install skills for AI agents.",
+    description: "This skill helps you build LLM-powered applications with Claude. Choose the right surface based on your needs, detect the project language, then read the relevant language-specific documentation.",
     category: "ai",
     tags: [
       "anthropics",
@@ -2931,6 +2931,576 @@ export const agentSkills: AgentSkill[] = [
     installCommand: "$ npx skills add https://github.com/anthropics/skills --skill claude-api",
     githubUrl: "https://github.com/anthropics/skills",
     author: "anthropics",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "vercel-labs-find-skills",
+    name: "find-skills",
+    description: "This skill helps you discover and install skills from the open agent skills ecosystem.",
+    category: "productivity",
+    tags: [
+      "vercel-labs",
+      "find-skills"
+    ],
+    useCases: [
+      "Use find-skills"
+    ],
+    installCommand: "$ npx skills add https://github.com/vercel-labs/skills --skill find-skills",
+    githubUrl: "https://github.com/vercel-labs/skills",
+    author: "vercel-labs",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-screenshot",
+    name: "screenshot",
+    description: "Follow these save-location rules every time:",
+    category: "ai",
+    tags: [
+      "openai",
+      "screenshot"
+    ],
+    useCases: [
+      "Use screenshot"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill screenshot",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-figma-implement-design",
+    name: "figma-implement-design",
+    description: "This skill provides a structured workflow for translating Figma designs into production-ready code with pixel-perfect accuracy. It ensures consistent integration with the Figma MCP server, proper use ",
+    category: "ai",
+    tags: [
+      "openai",
+      "figma-implement-design"
+    ],
+    useCases: [
+      "Use figma-implement-design"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill figma-implement-design",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-figma",
+    name: "figma",
+    description: "Use the Figma MCP server for Figma-driven implementation. For setup and debugging details (env vars, config, verification), see references/figma-mcp-config.md.",
+    category: "ai",
+    tags: [
+      "openai",
+      "figma"
+    ],
+    useCases: [
+      "Use figma"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill figma",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-playwright",
+    name: "playwright",
+    description: "Drive a real browser from the terminal using playwright-cli. Prefer the bundled wrapper script so the CLI works even when it is not globally installed.\nTreat this skill as CLI-first automation. Do not",
+    category: "ai",
+    tags: [
+      "openai",
+      "playwright"
+    ],
+    useCases: [
+      "Use playwright"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill playwright",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-security-best-practices",
+    name: "security-best-practices",
+    description: "This skill provides a description of how to identify the language and frameworks used by the current context, and then to load information from this skill's references directory about the security bes",
+    category: "ai",
+    tags: [
+      "openai",
+      "security-best-practices"
+    ],
+    useCases: [
+      "Use security-best-practices"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill security-best-practices",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-gh-address-comments",
+    name: "gh-address-comments",
+    description: "Guide to find the open PR for the current branch and address its comments with gh CLI. Run all gh commands with elevated network access.",
+    category: "ai",
+    tags: [
+      "openai",
+      "gh-address-comments"
+    ],
+    useCases: [
+      "Use gh-address-comments"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill gh-address-comments",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-gh-fix-ci",
+    name: "gh-fix-ci",
+    description: "Use gh to locate failing PR checks, fetch GitHub Actions logs for actionable failures, summarize the failure snippet, then propose a fix plan and implement after explicit approval.",
+    category: "ai",
+    tags: [
+      "openai",
+      "gh-fix-ci"
+    ],
+    useCases: [
+      "Use gh-fix-ci"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill gh-fix-ci",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "openai-jupyter-notebook",
+    name: "jupyter-notebook",
+    description: "Create clean, reproducible Jupyter notebooks for two primary modes:",
+    category: "ai",
+    tags: [
+      "openai",
+      "jupyter-notebook"
+    ],
+    useCases: [
+      "Use jupyter-notebook"
+    ],
+    installCommand: "$ npx skills add https://github.com/openai/skills --skill jupyter-notebook",
+    githubUrl: "https://github.com/openai/skills",
+    author: "openai",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "algolia-algolia",
+    name: "algolia",
+    description: "Use /algolia:connect to configure the MCP client with the Algolia MCP server.\nFor clients that don't support commands, see connection-setup for manual setup.",
+    category: "productivity",
+    tags: [
+      "algolia",
+      "algolia"
+    ],
+    useCases: [
+      "Use algolia"
+    ],
+    installCommand: "$ npx skills add https://github.com/algolia/skills --skill algolia",
+    githubUrl: "https://github.com/algolia/skills/blob/HEAD/skills/algolia/references/connection-setup.md",
+    author: "algolia",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: true
+  },
+  {
+    id: "wix-wix-cli-backend-api",
+    name: "wix-cli-backend-api",
+    description: "Creates HTTP endpoints for Wix CLI applications — server-side routes that handle HTTP requests, process data, and return responses. HTTP endpoints are powered by Astro endpoints and are automatically ",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-backend-api"
+    ],
+    useCases: [
+      "Use wix-cli-backend-api"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-backend-api",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wix-cli-app-validation/SKILL.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-dashboard-page",
+    name: "wix-cli-dashboard-page",
+    description: "Creates full-featured dashboard page extensions for Wix CLI applications. Dashboard pages appear in the Wix site owner's dashboard and enable site administrators to manage data, configure settings, an",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-dashboard-page"
+    ],
+    useCases: [
+      "Use wix-cli-dashboard-page"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-dashboard-page",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wix-cli-dashboard-page/references/WIX_DATA.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-embedded-script",
+    name: "wix-cli-embedded-script",
+    description: "Creates embedded script extensions for Wix CLI applications. Embedded scripts are HTML code fragments that get injected into the DOM of Wix sites, enabling integration with third-party services, analy",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-embedded-script"
+    ],
+    useCases: [
+      "Use wix-cli-embedded-script"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-embedded-script",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wix-cli-extension-registration/SKILL.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-dashboard-modal",
+    name: "wix-cli-dashboard-modal",
+    description: "Dashboard modals are popup dialogs triggered from dashboard pages or plugins. They consist of three files and use the Dashboard SDK for lifecycle control via openModal() and closeModal().",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-dashboard-modal"
+    ],
+    useCases: [
+      "Use wix-cli-dashboard-modal"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-dashboard-modal",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wix-cli-app-validation/SKILL.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-service-plugin",
+    name: "wix-cli-service-plugin",
+    description: "Creates service plugin extensions for Wix CLI applications. Service plugins are a set of APIs defined by Wix that you can use to inject custom logic into the existing backend flows of Wix business sol",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-service-plugin"
+    ],
+    useCases: [
+      "Use wix-cli-service-plugin"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-service-plugin",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wix-cli-service-plugin/references/ADDITIONAL-FEES.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-site-widget",
+    name: "wix-cli-site-widget",
+    description: "Creates custom element widget extensions for Wix CLI applications. Site widgets are React components converted to web components that appear in the Wix Editor, allowing site owners to add interactive,",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-site-widget"
+    ],
+    useCases: [
+      "Use wix-cli-site-widget"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-site-widget",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wix-cli-site-widget/references/SETTINGS_PANEL.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-app-validation",
+    name: "wix-cli-app-validation",
+    description: "Validates Wix CLI applications through a four-step sequential workflow: package installation, TypeScript compilation check, build, and preview.",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-app-validation"
+    ],
+    useCases: [
+      "Use wix-cli-app-validation"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-app-validation",
+    githubUrl: "https://github.com/wix/skills",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-site-component",
+    name: "wix-cli-site-component",
+    description: "Creates production-quality React site components with editor manifests for Wix CLI applications. Site components are React components that integrate with the Wix Editor, allowing site owners to custom",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-site-component"
+    ],
+    useCases: [
+      "Use wix-cli-site-component"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-site-component",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wix-cli-site-component/references/MANIFEST_GUIDELINES.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wix-cli-site-plugin",
+    name: "wix-cli-site-plugin",
+    description: "Creates site plugin extensions for Wix CLI applications. Site plugins are custom elements that integrate into predefined slots within Wix business solutions (like Wix Stores, Wix Bookings, Wix eCommer",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wix-cli-site-plugin"
+    ],
+    useCases: [
+      "Use wix-cli-site-plugin"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wix-cli-site-plugin",
+    githubUrl: "https://github.com/wix/skills/blob/HEAD/skills/wds-docs/SKILL.md",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "wix-wds-docs",
+    name: "wds-docs",
+    description: "Docs path: node_modules/@wix/design-system/dist/docs/",
+    category: "productivity",
+    tags: [
+      "wix",
+      "wds-docs"
+    ],
+    useCases: [
+      "Use wds-docs"
+    ],
+    installCommand: "$ npx skills add https://github.com/wix/skills --skill wds-docs",
+    githubUrl: "https://github.com/wix/skills",
+    author: "wix",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-scrape-webpage",
+    name: "scrape-webpage",
+    description: "Extract content, metadata, and images from a webpage for import/migration.",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "scrape-webpage"
+    ],
+    useCases: [
+      "Use scrape-webpage"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill scrape-webpage",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-docs-search",
+    name: "docs-search",
+    description: "This skill helps you efficiently search the complete aem.live documentation (docs and blog posts) without wasting context on irrelevant pages. Use the provided search script to find relevant documenta",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "docs-search"
+    ],
+    useCases: [
+      "Use docs-search"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill docs-search",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-content-modeling",
+    name: "content-modeling",
+    description: "This skill guides you through designing content models for AEM Edge Delivery Services blocks. A content model defines the table structure that authors work with when creating content",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "content-modeling"
+    ],
+    useCases: [
+      "Use content-modeling"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill content-modeling",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-code-review",
+    name: "code-review",
+    description: "Review code for AEM Edge Delivery Services (EDS) projects following established coding standards, performance requirements, and best practices.",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "code-review"
+    ],
+    useCases: [
+      "Use code-review"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill code-review",
+    githubUrl: "https://github.com/adobe/helix-tools-website/pull/196#pullrequestreview-3747855930",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-analyze-and-plan",
+    name: "analyze-and-plan",
+    description: "Analyze what you're building and define clear acceptance criteria before writing code. This skill provides task-specific analysis guidance for different types of AEM development work.",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "analyze-and-plan"
+    ],
+    useCases: [
+      "Use analyze-and-plan"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill analyze-and-plan",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-content-driven-development",
+    name: "content-driven-development",
+    description: "You are an orchestrator of the Content Driven Development workflow for AEM Edge Delivery Services. This workflow ensures code is built against real content with author-friendly content models.",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "content-driven-development"
+    ],
+    useCases: [
+      "Use content-driven-development"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill content-driven-development",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-testing-blocks",
+    name: "testing-blocks",
+    description: "This skill guides you through testing code changes in AEM Edge Delivery Services projects. Testing follows a value-versus-cost philosophy: create and maintain tests when the value they bring exceeds t",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "testing-blocks"
+    ],
+    useCases: [
+      "Use testing-blocks"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill testing-blocks",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-page-import",
+    name: "page-import",
+    description: "You are an orchestrator of a website page import/migration. You have specialized Skills at your disposal for each phase of the import workflow. Below is a high-level overview of what you're going to d",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "page-import"
+    ],
+    useCases: [
+      "Use page-import"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill page-import",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-building-blocks",
+    name: "building-blocks",
+    description: "This skill guides you through implementing AEM Edge Delivery blocks following established patterns and best practices. Blocks transform authored content into rich, interactive experiences through Java",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "building-blocks"
+    ],
+    useCases: [
+      "Use building-blocks"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill building-blocks",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
+    downloads: "1.0M",
+    isHot: false,
+    isNew: false
+  },
+  {
+    id: "adobe-authoring-analysis",
+    name: "authoring-analysis",
+    description: "Determine authoring approach for EACH content sequence: default content or specific block.",
+    category: "productivity",
+    tags: [
+      "adobe",
+      "authoring-analysis"
+    ],
+    useCases: [
+      "Use authoring-analysis"
+    ],
+    installCommand: "$ npx skills add https://github.com/adobe/skills --skill authoring-analysis",
+    githubUrl: "https://github.com/adobe/skills",
+    author: "adobe",
     downloads: "1.0M",
     isHot: false,
     isNew: false
