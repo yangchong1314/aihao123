@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Agent Skills 目录 - 190+ AI智能体技能 | AI好工具",
     description: "发现190+个Agent Skills，扩展你的AI助手能力。涵盖浏览器自动化、文档处理、代码生成等多种技能。",
-    url: "https://aihub123.site/skills",
+    url: "https://www.aihub123.site/skills",
     images: [{
-      url: "https://aihub123.site/og-image.png",
+      url: "https://www.aihub123.site/og-image.png",
       width: 1200,
       height: 630,
       alt: "Agent Skills 目录 - AI好工具"
@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Agent Skills 目录 - 190+ AI智能体技能 | AI好工具",
     description: "发现190+个Agent Skills，扩展你的AI助手能力。",
-    images: ["https://aihub123.site/og-image.png"]
+    images: ["https://www.aihub123.site/og-image.png"]
   },
   alternates: {
-    canonical: "https://aihub123.site/skills"
+    canonical: "https://www.aihub123.site/skills"
   }
 };
 

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://aihub123.site/sitemap.xml
+Sitemap: https://www.aihub123.site/sitemap.xml
 
 # Disallow admin or private paths if any
 # Disallow: /admin/

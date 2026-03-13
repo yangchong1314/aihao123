@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 // 网站基础配置
-const siteUrl = "https://aihub123.site";
+const siteUrl = "https://www.aihub123.site";
 const siteName = "AI好工具";
 const siteDescription = "精选国内外优质 AI 工具，涵盖写作、绘画、编程、办公、音频、视频等多个领域。帮助用户快速找到适合自己的 AI 工具，提升工作效率。";
 
