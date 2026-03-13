@@ -2,69 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- 首页 -->
   <url>
-    <loc>https://aihao123-two.vercel.app/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://aihub123.site/</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- 分类页面 -->
+  <!-- Skills 页面 -->
   <url>
-    <loc>https://aihao123-two.vercel.app/?category=writing</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://aihub123.site/skills/</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
+
+  <!-- MCP 页面 -->
   <url>
-    <loc>https://aihao123-two.vercel.app/?category=image</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://aihub123.site/mcp/</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
+
+  <!-- OpenClaw 页面 -->
   <url>
-    <loc>https://aihao123-two.vercel.app/?category=code</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aihao123-two.vercel.app/?category=office</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aihao123-two.vercel.app/?category=audio</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aihao123-two.vercel.app/?category=video</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aihao123-two.vercel.app/?category=other</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://aihub123.site/openclaw/</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 热门工具页面 -->
+  <!-- 推荐页面 -->
   <url>
-    <loc>https://aihao123-two.vercel.app/#hot</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- 全部工具页面 -->
-  <url>
-    <loc>https://aihao123-two.vercel.app/#tools</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://aihub123.site/submit/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
