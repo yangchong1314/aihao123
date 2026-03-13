@@ -115,6 +115,73 @@ export default function Home() {
         </div>
       </header>
 
+      {/* OpenClaw 重点推荐区 */}
+      <section className="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-800 text-white py-12 sm:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            {/* 左侧内容 */}
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-6">
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                🔥 最近超火的 AI 智能体平台
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                用 OpenClaw 打造你的<br className="hidden sm:block" />
+                <span className="text-purple-200">专属 AI 助手</span>
+              </h2>
+              <p className="text-lg text-purple-100 mb-6 max-w-xl mx-auto lg:mx-0">
+                零代码部署 · 多平台接入 · 100+ Skills 无限扩展<br />
+                支持微信、飞书、Discord、Telegram 等主流平台
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a
+                  href="/openclaw/"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-purple-700 rounded-full font-bold hover:bg-purple-50 transition-colors shadow-lg"
+                >
+                  <span>🚀</span>
+                  5分钟快速体验
+                </a>
+                <a
+                  href="https://docs.openclaw.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white rounded-full font-semibold hover:bg-white/20 transition-colors backdrop-blur-sm border border-white/20"
+                >
+                  <span>📖</span>
+                  查看文档
+                </a>
+              </div>
+            </div>
+            
+            {/* 右侧特性卡片 */}
+            <div className="flex-1 w-full max-w-md lg:max-w-none">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                  <div className="text-3xl mb-3">📱</div>
+                  <h3 className="font-bold text-lg mb-2">多平台接入</h3>
+                  <p className="text-purple-200 text-sm">微信、飞书、Discord、Slack 一处配置，处处可用</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                  <div className="text-3xl mb-3">🧩</div>
+                  <h3 className="font-bold text-lg mb-2">Skills 扩展</h3>
+                  <p className="text-purple-200 text-sm">100+ 官方 Skills，浏览器自动化、文档处理样样精通</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                  <div className="text-3xl mb-3">🔒</div>
+                  <h3 className="font-bold text-lg mb-2">开源自主</h3>
+                  <p className="text-purple-200 text-sm">代码开源，数据本地，支持私有化部署</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                  <div className="text-3xl mb-3">⚡</div>
+                  <h3 className="font-bold text-lg mb-2">5分钟上手</h3>
+                  <p className="text-purple-200 text-sm">简单配置即可拥有你的 AI 助手，无需编程基础</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-gray-50 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
