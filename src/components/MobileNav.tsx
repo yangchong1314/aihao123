@@ -9,6 +9,7 @@ export default function MobileNav() {
     { href: "/", label: "首页" },
     { href: "/skills/", label: "Skills" },
     { href: "/mcp/", label: "MCP" },
+    { href: "/openclaw/", label: "OpenClaw" },
     { href: "/submit/", label: "推荐" },
   ];
 

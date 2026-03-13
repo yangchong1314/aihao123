@@ -93,6 +93,12 @@ export default function Home() {
               MCP
             </a>
             <a
+              href="/openclaw/"
+              className="hover:text-purple-600 transition-colors font-medium"
+            >
+              OpenClaw
+            </a>
+            <a
               href="/submit/"
               className="hover:text-gray-900 transition-colors"
             >
